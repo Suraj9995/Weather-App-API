@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="./Img/hot.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Weather App</h1>
+    </header>
+    <section class="main-section">
+        <div class="weather-container">
+            <h1 class="m-5" id="city"></h1>
+            <div class="flex">
+                <input class="search-box m-5" type="text" id="input-city" placeholder="Enter City Name">
+                <button class="btn m-5" onclick="setCity()">Get Data</button>
+            </div>
+            <h2 class="m-5" id="temp">Temp : </h2>
+            <h2 class="m-5" id="feel">Feels Like : </h2>
+            <h2 class="m-5" id="temp-min">Temp-Min : </h2>
+            <h2 class="m-5" id="temp-max">Temp-Max :</h2>
+            <h2 class="m-5" id="humidity">Humidity : </h2>
+            <h2 class="m-5" id="visibility">Visibility :</h2>
+        </div>
+        <div class="icon-container">
+            
+        </div>
+    </section>
+
+    <script src="App.js"></script>
+</body>
+</html>
