@@ -17,6 +17,15 @@ function setCity(){
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`)
     .then(res=> res.json())
     .then((data)=> {
+        if(data.cod == 404){
+            console.log(data.message);
+            temp.innerHTML = `${data.message}`;
+            feel.innerHTML = `Feels Like : 0<sup>o</sup>C`;
+            tempMin.innerHTML = `Temp-Min : 0<sup>o</sup>C`;
+            tempMax.innerHTML = `Temp-Max : 0<sup>o</sup>C`;
+            humidity.innerHTML = `Humidity : 0%rh`;
+            visibility.innerHTML = `Visibility : 0 m`;
+        }
         console.log(data);
         temp.innerHTML = `Temp : ${Math.round(data.main.temp - 273.15)}<sup>o</sup>C`;
         feel.innerHTML = `Feels Like : ${Math.round(data.main.feels_like - 273.15)}<sup>o</sup>C`;
