@@ -9,9 +9,6 @@ const humidity = document.getElementById('humidity');
 const visibility = document.getElementById('visibility');
 const cityHeader = document.getElementById('city');
 
-
-
-
 function setCity(){
 
     let city = document.getElementById('input-city').value;
@@ -25,7 +22,7 @@ function setCity(){
         feel.innerHTML = `Feels Like : ${Math.round(data.main.feels_like - 273.15)}<sup>o</sup>C`;
         tempMin.innerHTML = `Temp-Min : ${Math.floor(data.main.temp_min - 273.15)}<sup>o</sup>C`;
         tempMax.innerHTML = `Temp-Max : ${Math.ceil(data.main.temp_max - 273.15)}<sup>o</sup>C`;
-        humidity.innerHTML = `Humidity : ${data.main.humidity}`;
-        visibility.innerHTML = `Visibility : ${data.visibility}`;
+        humidity.innerHTML = `Humidity : ${data.main.humidity} %rh`;
+        visibility.innerHTML = `Visibility : ${data.visibility} m`;
     });
 }
