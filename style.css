@@ -111,7 +111,7 @@ header h1{
 }
 
 @media only screen and (max-width: 1200px) {
-    .w-icon{
+    /* .w-icon{
         width: 80%;
         height: auto;
         margin-top: 95px;
@@ -119,6 +119,37 @@ header h1{
     }
     .btn{
         height: 55px;
+    } */
+    body{
+        background-image: url(./Img/background768.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .main-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .weather-container{
+        width: 80%;
+        height: 65vh;
+         align-items: center;
+        justify-content: center;
+    }
+    .weather-container h1{
+        font-size: 2.5rem;
+        text-transform: capitalize;
+    }
+    
+    .weather-container h2{
+        font-size: 1.75rem;
+    }
+    .w-icon{
+        width: 60%;
+        height: auto;
+        margin-top: 25px;
+        padding-left: 75px;
     }
     
 }
@@ -139,6 +170,12 @@ header h1{
     
     .weather-container h2{
         font-size: 1.5rem;
+    }
+    .w-icon{
+        width: 60%;
+        height: auto;
+        margin-top: 25px;
+        padding-left: 75px;
     }
 }
 @media only screen and (max-width: 768px) {
