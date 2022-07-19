@@ -111,15 +111,7 @@ header h1{
 }
 
 @media only screen and (max-width: 1200px) {
-    /* .w-icon{
-        width: 80%;
-        height: auto;
-        margin-top: 95px;
-        padding-left: 95px;
-    }
-    .btn{
-        height: 55px;
-    } */
+    
     body{
         background-image: url(./Img/background768.jpg);
         background-repeat: no-repeat;
@@ -132,9 +124,9 @@ header h1{
         flex-wrap: wrap;
     }
     .weather-container{
-        width: 80%;
-        height: 65vh;
-         align-items: center;
+        width: 90%;
+        height: 75vh;
+        align-items: center;
         justify-content: center;
     }
     .weather-container h1{
@@ -151,49 +143,14 @@ header h1{
         margin-top: 25px;
         padding-left: 75px;
     }
-    
 }
-@media only screen and (max-width: 992px) {
-    .w-icon{
-        width: 100%;
-        height: auto;
-        margin-top: 45px;
-        padding-left: 0;
-    }
-    .btn{
-        height: 55px;
-    }
-    .weather-container h1{
-        font-size: 2rem;
-        text-transform: capitalize;
-    }
-    
-    .weather-container h2{
-        font-size: 1.5rem;
-    }
-    .w-icon{
-        width: 60%;
-        height: auto;
-        margin-top: 25px;
-        padding-left: 75px;
-    }
-}
+
 @media only screen and (max-width: 768px) {
-    body{
-        background-image: url(./Img/background768.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .main-section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+    
     .weather-container{
         width: 80%;
         height: 65vh;
-         align-items: center;
+        align-items: center;
         justify-content: center;
     }
     .weather-container h1{
@@ -251,13 +208,7 @@ header h1{
     header h1{
         font-size: 2rem;
     }
-    .weather-container h1{
-        font-size: 2rem;
-        text-transform: capitalize;
-    }
-    .weather-container h2{
-        font-size: 1.5rem;
-    }
+    
     .weather-container{
         width: 75%;
         height: 65vh;
@@ -273,9 +224,6 @@ header h1{
         font-size: 1rem;
         width: 90%;
         height: 45px;
-        border-radius: 10px;
-        border: 1px solid gray;
-        text-indent: 20px;
     }
     .btn{
         width: 90%;
